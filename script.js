@@ -21,7 +21,7 @@ const Main = (props) => {
   
   const getMovies = (term='zombie', page=1) => {
     setLoading(true);
-    axios.get(`https://www.omdbapi.com/?apikey=756abb2f&s=${encodeURIComponent(term)}&plot=full&page=${page}&tomatoes=true`)
+    axios.get(`https://www.omdbapi.com/?apikey=756abb2f&s=${encodeURIComponent(term)}&plot=full&page=${page}`)
       .then(response => {
       // console.log(response.data);
       setMovies(response.data.Search);
@@ -36,7 +36,7 @@ const Main = (props) => {
   }
   
   const getMovie = (movieId) => {
-    axios.get(`https://www.omdbapi.com/?apikey=756abb2f&i=${movieId}&plot=full&tomatoes=true`)
+    axios.get(`https://www.omdbapi.com/?apikey=756abb2f&i=${movieId}&plot=full`)
     .then(response => {
       // console.log(response.data);
       setMovie(response.data);
