@@ -210,12 +210,13 @@ const Showexpand = props => {
 
     React.createElement("div", { class: "show-plot" }, /*#__PURE__*/
     React.createElement("p", null, props.Plot), /*#__PURE__*/
-    React.createElement("button", { className: "copy-imdb-btn", onClick: handleCopyClick }, "\uD83D\uDCCB Kopiuj ID filmu ", /*#__PURE__*/React.createElement("b", null, "(", props.imdbID, ")"))), /*#__PURE__*/
+    React.createElement("h1", null, "\uD83D\uDCCB Kopiuj ID filmu \uD83D\uDC49 ", /*#__PURE__*/React.createElement("b", null, props.imdbID)), /*#__PURE__*/
+    React.createElement("hr", null)), /*#__PURE__*/
 
 
     React.createElement("div", { class: "show-credits" }, /*#__PURE__*/
-    React.createElement("p", null, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("strong", null, "\u2B50IMDB:"), " ", props.imdbRating)), /*#__PURE__*/
-    React.createElement("p", null, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("strong", null, "\u2B50Metascore:"), " ", props.Metascore, "/100")), /*#__PURE__*/
+    React.createElement("h3", null, /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "\u2B50IMDB:"), " ", props.imdbRating)), /*#__PURE__*/
+    React.createElement("h3", null, /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "\u2B50Metascore:"), " ", props.Metascore || 'N/A ', "/100")), /*#__PURE__*/
     React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "\uD83C\uDFF3\u200D\uD83C\uDF08 Kraj:"), " ", props.Country), /*#__PURE__*/
     React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "\uD83D\uDC44 J\u0119zyk:"), " ", props.Language), /*#__PURE__*/
     React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "\u231A D\u0142ugo\u015B\u0107:"), " ", props.Runtime || 'N/A '), /*#__PURE__*/

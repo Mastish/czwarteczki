@@ -343,36 +343,3 @@ img {
     transform: translateY(0px);
   }
 }
-/* Copy IMDB Number Button Styles */
-.copy-imdb-btn {
-  background-color: #4dc057;
-  /* Dark purple background */
-  color: #fff;
-  /* White text */
-  font-size: 2rem;
-  /* Larger font size */
-  padding: 10px 20px;
-  /* Padding for larger button size */
-  border: none;
-  /* No border */
-  border-radius: 5px;
-  /* Rounded corners */
-  cursor: pointer;
-  /* Cursor changes to pointer on hover */
-  transition: background-color 0.3s ease;
-  /* Smooth background color transition on hover */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  /* Slight shadow for depth */
-  margin-top: 15px;
-  /* Margin at the top for spacing */
-}
-
-.copy-imdb-btn:hover {
-  background-color: #2f7435;
-  /* Lighter purple on hover */
-}
-
-.copy-imdb-btn:focus {
-  outline: none;
-  /* Remove focus outline */
-}
