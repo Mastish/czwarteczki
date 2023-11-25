@@ -92,7 +92,7 @@ const Main = (props) => {
         { loading ? <Loader /> : 
         (allCards.length === 0 ? 
          <div className='error'>
-           No movie found...
+           ¯\_(ツ)_/¯ Nie znaleziono filmu...
            <i class="far fa-grin-beam-sweat"></i>
          </div> : allCards) }
       </div>
